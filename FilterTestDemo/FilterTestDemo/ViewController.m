@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "CPUImageFilterUtil.h"
 #import "FWApplyFilter.h"
-
+#import <CoreImage/CoreImage.h>
 @interface ViewController ()
 
 @property (nonatomic,strong) UIImageView *imageView;
@@ -23,6 +23,8 @@
     [super viewDidLoad];
     
     [self.view addSubview:self.imageView];
+    
+    
     
     //系统自带，颜色矩阵混合
 //    UIImage *image = [CPUImageFilterUtil imageWithImage:[UIImage imageNamed:@"test.jpg"] withColorMatrix:colormatrix_gete];
